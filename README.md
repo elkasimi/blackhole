@@ -1,4 +1,4 @@
-This is my player which first second in CodeCup competition 2018 with the
+This is my player which was first in CodeCup competition 2018 with the
 game "blackhole".
 
 For an overview of the rules of game:
@@ -45,14 +45,13 @@ of adding the average of deltas with a weight that increases regarding the game 
 so the player acts normaly with strong players but whenever the game value is big it
 starts to be greedy. May be the wieght can be optimized further but it did the trick.
 
-- On a filling position I just choose the worse place for me and I fill it my very
- least value.
+- On a filling position I just choose the worse place for me and I fill with it my very least value.
 
-- The playout policy was quite simple choose either to explore space by putting your
+- The playout policy was quite simple: choose either to explore space by putting your
   largest value at the tile having more empty neighbors or fill the worse place for
   you. first choice is favoured at the begining second favoured at the end.
 
-- When a move get more than half of the maximum of simulations I break the search which help to stop re-checking trivial good moves and save time for later use. 
+- When a move get selected more than half of the maximum of simulations I break the search and select this move. This helps to stop re-checking trivial good moves and save time for later use. 
 
 # *Time management*
 
