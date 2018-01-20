@@ -4,12 +4,12 @@ game "blackhole".
 For an overview of the rules of game:
 [blackhole-rules](https://www.codecup.nl/rules_blackhole.php)
 
-# *AI description*
+## *AI description*
 
 I used Monte Carlo Tree Search (MCTS) as the basic algorithm to find the best
 move to play.
 
-# *Position representation and conventions*
+## *Position representation and conventions*
 
 a position consist of those data:
 - player to move
@@ -28,7 +28,7 @@ a tile itself is composed of:
 
 Position is considered in the filling phase if there is no non holes places
 
-# *Enhancements*
+## *Enhancements*
 
 - I used move grouping by place to look for place first then value to reduce move generation and to expand tree just on promising parts.
 
@@ -53,7 +53,7 @@ starts to be greedy. May be the wieght can be optimized further but it did the t
 
 - When a move get selected more than half of the maximum of simulations I break the search and select this move. This helps to stop re-checking trivial good moves and save time for later use. 
 
-# *Time management*
+## *Time management*
 
 A player has 5 seconds in total. I used it like this:
 The player is stopped with max simulations only when the total is less than 4 seconds but after that it divide remaining time by the number of remaining moves.
@@ -61,7 +61,7 @@ The player is stopped with max simulations only when the total is less than 4 se
 This management was done like this because game is somewhat decided from the very begining sometimes.
 
 
-# *Building*
+## *Building*
 
 you need cmake to build this player. in a terminal:
 
