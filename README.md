@@ -72,3 +72,6 @@ cd build
 cmake ..
 make
 ```
+If you want to find the Android app:
+For an overview of the rules of game:
+[Android-app](https://play.google.com/store/apps/details?id=com.mamay.blackhole)
