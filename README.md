@@ -72,5 +72,7 @@ cd build
 cmake ..
 make
 ```
-If you want to find the Android app:
+
+## *Android app*
+If you want to download the Android app:
 [Android-app](https://play.google.com/store/apps/details?id=com.mamay.blackhole)
